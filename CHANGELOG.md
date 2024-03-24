@@ -2,7 +2,14 @@
 
 All notable changes to this project will be documented in this file. 
 
-#### [v0.1.1](https://github.com/zumerlab/tinybox-test/compare/v0.1.1...v0.1.1)
+#### [v0.1.2](https://github.com/zumerlab/tinybox-test/compare/v0.1.2...v0.1.2)
+
+#### [v0.1.2](https://github.com/zumerlab/tinybox-test/compare/v0.1.1...v0.1.2)
+
+> 24 March 2024
+
+- Bumped version [`7ae34cb`](https://github.com/zumerlab/tinybox-test/commit/7ae34cb1437691121104897858bd04d4361c2262)
+- Fix bin execution [`3a32929`](https://github.com/zumerlab/tinybox-test/commit/3a32929ccc3e0f35c42d9584cc50b6ee296a127a)
 
 #### [v0.1.1](https://github.com/zumerlab/tinybox-test/compare/v0.1.0...v0.1.1)
 

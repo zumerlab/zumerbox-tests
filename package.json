@@ -1,5 +1,5 @@
 {
-  "name": "@tinybox/test",
+  "name": "@tinybox/tests",
   "version": "0.1.2",
   "description": "",
   "main": "./bin/index.js",

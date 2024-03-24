@@ -3,9 +3,10 @@
   "version": "0.1.1",
   "description": "",
   "main": "./bin/index.js",
-  "bin": "./bin/index.js",
+  "bin": {
+    "tests": "./bin/index.js"
+  },
   "scripts": {
-    "test": "jest",
     "release": "npx @tinybox/release",
     "postversion": "npx @tinybox/changelog && git add CHANGELOG.md && git commit -m \"Bumped version\" && git push --follow-tags"
   },

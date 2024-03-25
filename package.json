@@ -1,5 +1,5 @@
 {
-  "name": "@tinybox/tests",
+  "name": "@zumerbox/tests",
   "version": "0.1.4",
   "description": "",
   "main": "./bin/index.js",
@@ -7,11 +7,19 @@
     "tests": "./bin/index.js"
   },
   "scripts": {
-    "release": "npx @tinybox/release",
-    "postversion": "npx @tinybox/changelog && git add CHANGELOG.md && git commit -m \"Bumped version\" && git push --follow-tags"
+    "release": "npx @zumerbox/release",
+    "postversion": "npx @zumerbox/changelog && git add CHANGELOG.md && git commit -m \"Bumped version\" && git push --follow-tags"
   },
   "author": "Juan Martin Muda",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zumerlab/zumerbox-tests.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zumerlab/zumerbox-tests/issues"
+  },
+  "homepage": "https://github.com/zumerlab/zumerbox-tests#readme",
   "dependencies": {
     "jest": "^29.7.0",
     "jest-image-snapshot": "^6.4.0",

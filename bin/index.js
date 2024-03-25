@@ -3,10 +3,10 @@ const { execSync } = require('child_process')
 const path = require('path')
 try {
   const args = process.argv.slice(2).join(' ')
-  console.log('hola')
-  const jestCmd = path.resolve(__dirname, '../node_modules/.bin/jest');
+  const filesPath = process.cwd();
   const configPath = path.resolve(__dirname, '../jest.config.json')
-  const result = execSync(`jest -c ${configPath} ${args}`, {
+  const imageJestPath = path.resolve(__dirname, '../jest-image-snapshot-extend.js')
+  execSync(`jest --rootDir ${filesPath} -c ${configPath} --setupFilesAfterEnv ${imageJestPath} ${args}`, {
     stdio: 'inherit'
   })
 

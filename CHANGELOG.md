@@ -2,7 +2,14 @@
 
 All notable changes to this project will be documented in this file. 
 
-#### [v0.1.3](https://github.com/zumerlab/tinybox-test/compare/v0.1.3...v0.1.3)
+#### [v0.1.4](https://github.com/zumerlab/tinybox-test/compare/v0.1.4...v0.1.4)
+
+#### [v0.1.4](https://github.com/zumerlab/tinybox-test/compare/v0.1.3...v0.1.4)
+
+> 25 March 2024
+
+- Fix dir paths to run tests npm installed or npx [`57ae1a6`](https://github.com/zumerlab/tinybox-test/commit/57ae1a6b7a3e95ca3765166da80ade8dbfc706a7)
+- Bumped version [`9dd014c`](https://github.com/zumerlab/tinybox-test/commit/9dd014c924f9227e45558bc8fc3f1e4426086ec5)
 
 #### [v0.1.3](https://github.com/zumerlab/tinybox-test/compare/v0.1.2...v0.1.3)
 

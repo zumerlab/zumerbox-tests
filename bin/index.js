@@ -3,39 +3,37 @@ const { execSync } = require('child_process');
 const path = require('path');
 const fs = require('fs');
 
-try {
-  const args = process.argv.slice(2).join(' ');
-  const cwd = process.cwd();
+// Force Jest to run from this package's local installation
+const jestBin = require.resolve('jest/bin/jest');
 
-  // Ruta por defecto a la config y extensión desde el paquete
+try {
+  const cwd = process.cwd();
+  const args = process.argv.slice(2).join(' ');
+
   const defaultConfig = path.resolve(__dirname, '../jest.config.json');
   const defaultSetup = path.resolve(__dirname, '../jest-image-snapshot-extend.js');
 
-  // Detectar si hay configuración del usuario
-  const userConfigJS = path.join(cwd, 'jest.config.js');
-  const userConfigJSON = path.join(cwd, 'jest.config.json');
+  const hasUserConfig =
+    fs.existsSync(path.join(cwd, 'jest.config.js')) ||
+    fs.existsSync(path.join(cwd, 'jest.config.json'));
 
-  const configPath = fs.existsSync(userConfigJS)
-    ? userConfigJS
-    : fs.existsSync(userConfigJSON)
-      ? userConfigJSON
-      : defaultConfig;
-
+  const configArg = hasUserConfig ? '' : `-c ${defaultConfig}`;
   const setupArg = fs.existsSync(defaultSetup)
     ? `--setupFilesAfterEnv ${defaultSetup}`
     : '';
 
-  if (configPath === defaultConfig) {
-    console.log('🧪 Usando configuración por defecto de @zumerbox/tests');
+  if (!hasUserConfig) {
+    console.log('🧪 Using default config from @zumerbox/tests');
   } else {
-    console.log(`🧪 Usando configuración personalizada: ${path.basename(configPath)}`);
+    console.log('🧪 Using user-defined Jest config');
   }
 
-  execSync(`jest --rootDir ${cwd} -c ${configPath} ${setupArg} ${args}`, {
+  // Compose full command using internal Jest
+  execSync(`node ${jestBin} --rootDir ${cwd} ${configArg} ${setupArg} ${args}`, {
     stdio: 'inherit',
   });
 
 } catch (error) {
-  console.error('❌ Jest terminó con errores. Corregí y volvé a intentar.');
+  console.error('❌ Jest failed. Please fix the errors and try again.');
   process.exit(1);
 }

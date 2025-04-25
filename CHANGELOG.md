@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. 
 
+#### [v0.1.8](https://github.com/zumerlab/zumerbox-tests/compare/v0.1.7...v0.1.8)
+
+> 25 April 2025
+
+- fix preset [`de11277`](https://github.com/zumerlab/zumerbox-tests/commit/de112772765467de9634ed65bdf3d123adfc1d3e)
+- Bumped version [`b632505`](https://github.com/zumerlab/zumerbox-tests/commit/b632505f27b9bcc65b3849185034fe731e6caebd)
+
 #### [v0.1.7](https://github.com/zumerlab/zumerbox-tests/compare/v0.1.6...v0.1.7)
 
 > 25 April 2025

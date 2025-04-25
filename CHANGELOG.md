@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. 
 
+#### [v0.1.7](https://github.com/zumerlab/zumerbox-tests/compare/v0.1.6...v0.1.7)
+
+> 25 April 2025
+
+- fix no found config [`6702a77`](https://github.com/zumerlab/zumerbox-tests/commit/6702a770ac33e2381de96f5672b993c4fa91faca)
+- Create LICENSE [`f45d7b1`](https://github.com/zumerlab/zumerbox-tests/commit/f45d7b182bf5399913775cf5c1ec9a3956834ec8)
+- Bumped version [`f6f0879`](https://github.com/zumerlab/zumerbox-tests/commit/f6f08797368fcc7b3fe4c75db20a1a60ba45f53f)
+
 #### [v0.1.6](https://github.com/zumerlab/zumerbox-tests/compare/v0.1.5...v0.1.6)
 
 > 27 March 2024

@@ -3,6 +3,11 @@
   "version": "0.1.6",
   "description": "",
   "main": "./bin/index.js",
+  "files": [
+    "bin/",
+    "jest.config.json",
+    "jest-image-snapshot-extend.js"
+  ],
   "bin": {
     "tests": "./bin/index.js"
   },

@@ -1,17 +1,23 @@
 {
   "name": "@zumerbox/tests",
   "version": "0.1.8",
-  "description": "",
-  "main": "./bin/index.js",
+  "description": "Visual testing library with Puppeteer and Mocha",
   "bin": {
-    "tests": "./bin/index.js"
+    "zumerbox-tests": "./bin/index.js"
   },
-  "files": [
-    "bin/",
-    "jest.config.json",
-    "jest-image-snapshot-extend.js"
-  ],
+  "dependencies": {
+    "chai": "^5.2.0",
+    "glob": "^11.0.2",
+    "jsdom": "^26.1.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^11.1.0",
+    "pixelmatch": "^7.1.0",
+    "pngjs": "^7.0.0",
+    "puppeteer": "^24.7.2"
+  },
   "scripts": {
+    "test": "node ./bin/index.js",
+    "test:update": "node ./bin/index.js -u",
     "bump": "npx @zumerbox/bump",
     "postbump": "npx @zumerbox/changelog && git add CHANGELOG.md && git commit -m \"Bumped version\" && git push --follow-tags"
   },
@@ -24,10 +30,5 @@
   "bugs": {
     "url": "https://github.com/zumerlab/zumerbox-tests/issues"
   },
-  "homepage": "https://github.com/zumerlab/zumerbox-tests#readme",
-  "dependencies": {
-    "jest": "^29.7.0",
-    "jest-image-snapshot": "^6.4.0",
-    "jest-puppeteer": "^10.0.1"
-  }
+  "homepage": "https://github.com/zumerlab/zumerbox-tests#readme"
 }

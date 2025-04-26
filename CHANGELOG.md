@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. 
 
+### [v1.0.0](https://github.com/zumerlab/zumerbox-tests/compare/v0.1.8...v1.0.0)
+
+> 26 April 2025
+
+- rewrite lib with new engine [`e10e156`](https://github.com/zumerlab/zumerbox-tests/commit/e10e1565b3611711d0988600aa034f74e788dae6)
+- Bumped version [`297c34a`](https://github.com/zumerlab/zumerbox-tests/commit/297c34a1a635eb47c7e6d79c36b8de1b0f50af93)
+
 #### [v0.1.8](https://github.com/zumerlab/zumerbox-tests/compare/v0.1.7...v0.1.8)
 
 > 25 April 2025
